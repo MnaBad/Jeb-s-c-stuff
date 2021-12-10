@@ -8,7 +8,6 @@ namespace C_
         static void Main(string[] args)
         {
             TextGame TextGame = new TextGame();
-
             for(int i = 0; i !=  5; i++)
             {
                 TextGame.CheckIfCorrect(TextGame.question[i], TextGame.correctResponse[i], TextGame.inncorrectResponse[i], TextGame.yesOrNo[i]);
