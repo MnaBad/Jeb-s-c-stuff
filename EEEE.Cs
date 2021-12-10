@@ -7,13 +7,14 @@ namespace C_
     {
         static void Main(string[] args)
         {
+            ConfigData ConfigData = new ConfigData();
             TextGame TextGame = new TextGame();
-            for(int i = 0; i !=  5; i++)
+
+            for(int i = 0; i !=  ConfigData.numberOfEvents; i++)
             {
-                TextGame.CheckIfCorrect(TextGame.question[i], TextGame.correctResponse[i], TextGame.inncorrectResponse[i], TextGame.yesOrNo[i]);
+                TextGame.CheckIfCorrect(ConfigData.question[i], ConfigData.correctResponse[i], ConfigData.inncorrectResponse[i], ConfigData.yesOrNo[i]);
             }
-            Thread.Sleep(5000);
-            Console.Clear();
+            Environment.Exit(0);
         }
     }
 
