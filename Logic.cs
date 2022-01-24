@@ -9,9 +9,9 @@ namespace C_
         private bool CheckResponse()
         {
             bool returnValue = false;
-            string response = Console.ReadLine().ToLower();
             while(true)
             {
+            string response = Console.ReadLine().ToLower();
             if(response == "y")
             {
                 returnValue = true;
